@@ -1,0 +1,19 @@
+{
+  "name": "unica-recent-logs",
+  "private": true,
+  "type": "module",
+  "description": "Lists Unica listener, campaignweb, flowchart, platform, and ac_web logs updated in the last 15 minutes.",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "tsx --test test/recent-unica-logs.test.ts",
+    "dev": "agent-sdk dev"
+  },
+  "dependencies": {
+    "@grok/agent-sdk": "^0.6.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "6.0.3"
+  }
+}
