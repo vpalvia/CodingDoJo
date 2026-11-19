@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowchartReport>
+  <Flowchart name="Flowchart1">
+    <Process name="Select1" type="Select">
+      <DerivedFields>
+        <DerivedField name="Utilization" persistent="true">
+          <Expression>(Balance / CreditLimit) * 100</Expression>
+        </DerivedField>
+        <Field name="IncomeCopy">
+          <Expression>Income * 1.0</Expression>
+        </Field>
+      </DerivedFields>
+      <OutputFields>
+        <Field name="CustomerID"/>
+      </OutputFields>
+    </Process>
+    <Process name="Snapshot1" type="Snapshot">
+      <DerivedField name="MailBand" persistent="false" expression="Utilization / 10"/>
+    </Process>
+  </Flowchart>
+</FlowchartReport>
