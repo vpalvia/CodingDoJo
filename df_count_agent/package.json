@@ -1,0 +1,19 @@
+{
+  "name": "df_count_agent",
+  "private": true,
+  "type": "module",
+  "description": "Counts Unica derived fields per process box from flowchart XML reports.",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "tsx --test test/count-derived-fields.test.ts",
+    "dev": "agent-sdk dev"
+  },
+  "dependencies": {
+    "@grok/agent-sdk": "^0.6.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "6.0.3"
+  }
+}

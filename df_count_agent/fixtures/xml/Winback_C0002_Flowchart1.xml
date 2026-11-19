@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns:Flowchart xmlns:ns="urn:unica:flowchart" name="Flowchart1">
+  <ns:ProcessBox name="Extract1" type="Extract">
+    <ns:PersistentDerivedField name="Recency" expression="DaysSince(LastPurchase)"/>
+  </ns:ProcessBox>
+  <ns:Process name="MailList1" type="MailList"/>
+</ns:Flowchart>
